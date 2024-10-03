@@ -3,7 +3,7 @@ Feature: Example Table Tags
 
   Background:
     Given I have something
-
+  @scenario
   Scenario Outline: Foo From Example 1
     Then I expect something
     @another @this
