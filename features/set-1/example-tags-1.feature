@@ -1,5 +1,5 @@
 @one @product-1
-Feature: Example Table Tags
+Feature: Example Table Tags 1
 
   Background:
     Given I have something
