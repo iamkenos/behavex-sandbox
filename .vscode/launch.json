@@ -1,0 +1,69 @@
+{
+  "configurations": [
+    {
+      "name": "behave",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "behave",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "-t",
+        "one",
+        "-t",
+        "debug",
+        "--format",
+        "null",
+        "--logging-level",
+        "INFO",
+        "--no-capture",
+        "--no-logcapture",
+        "features/set-1/example-tags-1.feature"
+      ],
+      "justMyCode": false
+    },
+    {
+      "name": "behavex",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "behavex",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "-t",
+        "one",
+        "-t",
+        "scenario",
+        "--parallel-processes",
+        "5",
+        "--parallel-scheme",
+        "feature",
+        // "--parallel-delay",
+        // "250",
+        "--logging-level",
+        "ERROR",
+        // "features"
+      ],
+      "justMyCode": false
+    },
+    {
+      "name": "behavex scenario parallel",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "behavex",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "-t",
+        "asdf",
+        "--parallel-processes",
+        "5",
+        "--parallel-scheme",
+        "scenario",
+        "--logging-level",
+        "ERROR",
+      ],
+      "justMyCode": false
+    },
+  ]
+}
